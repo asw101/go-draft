@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: go-draft
+  name: go-draft
+spec:
+  selector:
+    matchLabels:
+      app: go-draft
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: acrboxv6y.azurecr.io/go-draft
+        name: go-draft
+        resources: {}
+status: {}
